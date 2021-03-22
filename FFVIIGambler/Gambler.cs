@@ -130,26 +130,7 @@ namespace FFVIIGambler
 
                 if (inserted)
                 {
-                    if (CountHandicaps == 1)
-                    {
-                        foreach (Objects.ReelSet set in Controller.ReelSetsUnique)
-                        {
-                            if (set.Reels[0].Handicaps.Contains(handicap))
-                            {
-                                SearchResults.Add(set);
-                            }
-                        }
-                    }
-                    else
-                    {
-                        foreach (Objects.ReelSet set in SearchResults.ToList())
-                        {
-                            if (!set.Reels[(CountHandicaps - 1) / 3].Handicaps.Contains(handicap))
-                            {
-                                SearchResults.Remove(set);
-                            }
-                        }
-                    }
+                    Search(CountHandicaps);
 
                     if (SearchResults.Count == 1)
                     {
@@ -163,7 +144,35 @@ namespace FFVIIGambler
                 }
             }
 
+            btnUndo.Enabled = true;
+
             UpdateReels();
+        }
+
+        private void Search(int index)
+        {
+            Objects.Handicap handicap = CurrentReelSet.Reels[(index - 1) / 3].Handicaps[(index - 1) % 3];
+
+            if (index == 1)
+            {
+                foreach (Objects.ReelSet set in Controller.ReelSetsUnique)
+                {
+                    if (set.Reels[0].Handicaps.Contains(handicap))
+                    {
+                        SearchResults.Add(set);
+                    }
+                }
+            }
+            else
+            {
+                foreach (Objects.ReelSet set in SearchResults.ToList())
+                {
+                    if (!set.Reels[(index - 1) / 3].Handicaps.Contains(handicap))
+                    {
+                        SearchResults.Remove(set);
+                    }
+                }
+            }
         }
 
         private void UpdateReels()
@@ -175,14 +184,22 @@ namespace FFVIIGambler
                     ((PictureBox)this.Controls["pictureBox" + p]).Image = Image.FromFile(String.Format(@"{0}\{1}", AppDomain.CurrentDomain.BaseDirectory, Objects.Reel.HandicapFilename(SearchResults[0].Reels[(p - 1) / 3].Handicaps[(p - 1) % 3])));
                 }
             }
-            else if (CountHandicaps == 0)
+            else
             {
                 for (int p = 1; p <= 21; p++)
                 {
                     if (((PictureBox)this.Controls["pictureBox" + p]).Image != null)
                     {
                         ((PictureBox)this.Controls["pictureBox" + p]).Image.Dispose();
+                    }
+                    
+                    if (CurrentReelSet.Reels[(p - 1) / 3].Handicaps[(p - 1) % 3] == Objects.Handicap.UNKNOWN)
+                    {
                         ((PictureBox)this.Controls["pictureBox" + p]).Image = null;
+                    }
+                    else
+                    {
+                        ((PictureBox)this.Controls["pictureBox" + p]).Image = Image.FromFile(String.Format(@"{0}\{1}", AppDomain.CurrentDomain.BaseDirectory, Objects.Reel.HandicapFilename(CurrentReelSet.Reels[(p - 1) / 3].Handicaps[(p - 1) % 3])));
                     }
                 }
             }
@@ -197,9 +214,40 @@ namespace FFVIIGambler
             UpdateReels();
         }
 
+        private void UndoReel()
+        {
+            int count = CurrentReelSet.Count() - 1;
+            CurrentReelSet.Reels[count / 3].Handicaps[count % 3] = Objects.Handicap.UNKNOWN;
+            CountHandicaps = count;
+
+            if (((PictureBox)this.Controls["pictureBox" + (count + 1)]).Image != null)
+            {
+                ((PictureBox)this.Controls["pictureBox" + (count + 1)]).Image.Dispose();
+                ((PictureBox)this.Controls["pictureBox" + (count + 1)]).Image = null;
+            }
+
+            SearchResults = new List<Objects.ReelSet>();
+            for (int h = 1; h <= CountHandicaps; h++)
+            {
+                Search(h);
+            }
+
+            if (CountHandicaps == 0)
+            {
+                btnUndo.Enabled = false;
+            }
+
+            UpdateReels();
+        }
+
         private void btnReset_Click(object sender, EventArgs e)
         {
             ResetReel();
+        }
+
+        private void btnUndo_Click(object sender, EventArgs e)
+        {
+            UndoReel();
         }
 
         private void btnMagic_Click(object sender, EventArgs e)

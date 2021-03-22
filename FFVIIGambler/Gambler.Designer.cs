@@ -74,6 +74,7 @@
             this.pictureBox19 = new System.Windows.Forms.PictureBox();
             this.pictureBox20 = new System.Windows.Forms.PictureBox();
             this.pictureBox21 = new System.Windows.Forms.PictureBox();
+            this.btnUndo = new System.Windows.Forms.Button();
             this.lblAuthor = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -584,6 +585,18 @@
             this.pictureBox21.TabIndex = 44;
             this.pictureBox21.TabStop = false;
             // 
+            // btnUndo
+            // 
+            this.btnUndo.Enabled = false;
+            this.btnUndo.Location = new System.Drawing.Point(405, 47);
+            this.btnUndo.Margin = new System.Windows.Forms.Padding(2);
+            this.btnUndo.Name = "btnUndo";
+            this.btnUndo.Size = new System.Drawing.Size(130, 26);
+            this.btnUndo.TabIndex = 47;
+            this.btnUndo.Text = "Undo";
+            this.btnUndo.UseVisualStyleBackColor = true;
+            this.btnUndo.Click += new System.EventHandler(this.btnUndo_Click);
+            // 
             // lblAuthor
             // 
             this.lblAuthor.AutoSize = true;
@@ -600,6 +613,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(542, 281);
             this.Controls.Add(this.lblAuthor);
+            this.Controls.Add(this.btnUndo);
             this.Controls.Add(this.pictureBox19);
             this.Controls.Add(this.pictureBox20);
             this.Controls.Add(this.pictureBox21);
@@ -726,6 +740,7 @@
         private System.Windows.Forms.PictureBox pictureBox19;
         private System.Windows.Forms.PictureBox pictureBox20;
         private System.Windows.Forms.PictureBox pictureBox21;
+        private System.Windows.Forms.Button btnUndo;
         private System.Windows.Forms.Label lblAuthor;
     }
 }
