@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace FFVIIGambler.Objects
 {
-    public class Reel
+    public class Reel : ICloneable
     {
         public Handicap[] Handicaps = new Handicap[3];
 
@@ -106,6 +106,17 @@ namespace FFVIIGambler.Objects
             }
 
             return filename;
+        }
+
+        public object Clone()
+        {
+            Reel ret = new Reel();
+            for (int h = 0; h < Handicaps.Length; h++)
+            {
+                ret.Handicaps[h] = Handicaps[h];
+            }
+
+            return ret;
         }
     }
 
