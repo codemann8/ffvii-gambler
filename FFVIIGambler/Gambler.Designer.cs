@@ -100,7 +100,7 @@
             // 
             // btnMagic
             // 
-            this.btnMagic.Location = new System.Drawing.Point(6, 110);
+            this.btnMagic.Location = new System.Drawing.Point(6, 104);
             this.btnMagic.Margin = new System.Windows.Forms.Padding(2);
             this.btnMagic.Name = "btnMagic";
             this.btnMagic.Size = new System.Drawing.Size(130, 26);
@@ -111,7 +111,7 @@
             // 
             // btnSummon
             // 
-            this.btnSummon.Location = new System.Drawing.Point(6, 139);
+            this.btnSummon.Location = new System.Drawing.Point(6, 133);
             this.btnSummon.Margin = new System.Windows.Forms.Padding(2);
             this.btnSummon.Name = "btnSummon";
             this.btnSummon.Size = new System.Drawing.Size(130, 26);
@@ -122,7 +122,7 @@
             // 
             // btnIndependent
             // 
-            this.btnIndependent.Location = new System.Drawing.Point(6, 198);
+            this.btnIndependent.Location = new System.Drawing.Point(6, 192);
             this.btnIndependent.Margin = new System.Windows.Forms.Padding(2);
             this.btnIndependent.Name = "btnIndependent";
             this.btnIndependent.Size = new System.Drawing.Size(130, 26);
@@ -133,7 +133,7 @@
             // 
             // btnCommand
             // 
-            this.btnCommand.Location = new System.Drawing.Point(6, 227);
+            this.btnCommand.Location = new System.Drawing.Point(6, 221);
             this.btnCommand.Margin = new System.Windows.Forms.Padding(2);
             this.btnCommand.Name = "btnCommand";
             this.btnCommand.Size = new System.Drawing.Size(130, 26);
@@ -144,7 +144,7 @@
             // 
             // btnMateria
             // 
-            this.btnMateria.Location = new System.Drawing.Point(6, 256);
+            this.btnMateria.Location = new System.Drawing.Point(6, 250);
             this.btnMateria.Margin = new System.Windows.Forms.Padding(2);
             this.btnMateria.Name = "btnMateria";
             this.btnMateria.Size = new System.Drawing.Size(130, 26);
@@ -155,7 +155,7 @@
             // 
             // btnAccessory
             // 
-            this.btnAccessory.Location = new System.Drawing.Point(139, 110);
+            this.btnAccessory.Location = new System.Drawing.Point(139, 104);
             this.btnAccessory.Margin = new System.Windows.Forms.Padding(2);
             this.btnAccessory.Name = "btnAccessory";
             this.btnAccessory.Size = new System.Drawing.Size(130, 26);
@@ -166,7 +166,7 @@
             // 
             // btnItem
             // 
-            this.btnItem.Location = new System.Drawing.Point(139, 139);
+            this.btnItem.Location = new System.Drawing.Point(139, 133);
             this.btnItem.Margin = new System.Windows.Forms.Padding(2);
             this.btnItem.Name = "btnItem";
             this.btnItem.Size = new System.Drawing.Size(130, 26);
@@ -177,7 +177,7 @@
             // 
             // btnArmor
             // 
-            this.btnArmor.Location = new System.Drawing.Point(139, 168);
+            this.btnArmor.Location = new System.Drawing.Point(139, 162);
             this.btnArmor.Margin = new System.Windows.Forms.Padding(2);
             this.btnArmor.Name = "btnArmor";
             this.btnArmor.Size = new System.Drawing.Size(130, 26);
@@ -188,7 +188,7 @@
             // 
             // btnWeapon
             // 
-            this.btnWeapon.Location = new System.Drawing.Point(139, 198);
+            this.btnWeapon.Location = new System.Drawing.Point(139, 192);
             this.btnWeapon.Margin = new System.Windows.Forms.Padding(2);
             this.btnWeapon.Name = "btnWeapon";
             this.btnWeapon.Size = new System.Drawing.Size(130, 26);
@@ -199,7 +199,7 @@
             // 
             // btnSpeed
             // 
-            this.btnSpeed.Location = new System.Drawing.Point(139, 227);
+            this.btnSpeed.Location = new System.Drawing.Point(139, 221);
             this.btnSpeed.Margin = new System.Windows.Forms.Padding(2);
             this.btnSpeed.Name = "btnSpeed";
             this.btnSpeed.Size = new System.Drawing.Size(130, 26);
@@ -211,7 +211,7 @@
             // btnAccuracy
             // 
             this.btnAccuracy.Enabled = false;
-            this.btnAccuracy.Location = new System.Drawing.Point(139, 256);
+            this.btnAccuracy.Location = new System.Drawing.Point(139, 250);
             this.btnAccuracy.Margin = new System.Windows.Forms.Padding(2);
             this.btnAccuracy.Name = "btnAccuracy";
             this.btnAccuracy.Size = new System.Drawing.Size(130, 26);
@@ -222,7 +222,7 @@
             // 
             // btnMini
             // 
-            this.btnMini.Location = new System.Drawing.Point(272, 110);
+            this.btnMini.Location = new System.Drawing.Point(272, 104);
             this.btnMini.Margin = new System.Windows.Forms.Padding(2);
             this.btnMini.Name = "btnMini";
             this.btnMini.Size = new System.Drawing.Size(130, 26);
@@ -233,7 +233,7 @@
             // 
             // btnPoison
             // 
-            this.btnPoison.Location = new System.Drawing.Point(272, 139);
+            this.btnPoison.Location = new System.Drawing.Point(272, 133);
             this.btnPoison.Margin = new System.Windows.Forms.Padding(2);
             this.btnPoison.Name = "btnPoison";
             this.btnPoison.Size = new System.Drawing.Size(130, 26);
@@ -244,7 +244,7 @@
             // 
             // btnToad
             // 
-            this.btnToad.Location = new System.Drawing.Point(272, 168);
+            this.btnToad.Location = new System.Drawing.Point(272, 162);
             this.btnToad.Margin = new System.Windows.Forms.Padding(2);
             this.btnToad.Name = "btnToad";
             this.btnToad.Size = new System.Drawing.Size(130, 26);
@@ -255,7 +255,7 @@
             // 
             // btnTime
             // 
-            this.btnTime.Location = new System.Drawing.Point(272, 198);
+            this.btnTime.Location = new System.Drawing.Point(272, 192);
             this.btnTime.Margin = new System.Windows.Forms.Padding(2);
             this.btnTime.Name = "btnTime";
             this.btnTime.Size = new System.Drawing.Size(130, 26);
@@ -266,7 +266,7 @@
             // 
             // btnFiveLevels
             // 
-            this.btnFiveLevels.Location = new System.Drawing.Point(272, 227);
+            this.btnFiveLevels.Location = new System.Drawing.Point(272, 221);
             this.btnFiveLevels.Margin = new System.Windows.Forms.Padding(2);
             this.btnFiveLevels.Name = "btnFiveLevels";
             this.btnFiveLevels.Size = new System.Drawing.Size(130, 26);
@@ -277,7 +277,7 @@
             // 
             // btnTenLevels
             // 
-            this.btnTenLevels.Location = new System.Drawing.Point(272, 256);
+            this.btnTenLevels.Location = new System.Drawing.Point(272, 250);
             this.btnTenLevels.Margin = new System.Windows.Forms.Padding(2);
             this.btnTenLevels.Name = "btnTenLevels";
             this.btnTenLevels.Size = new System.Drawing.Size(130, 26);
@@ -288,7 +288,7 @@
             // 
             // btnHP
             // 
-            this.btnHP.Location = new System.Drawing.Point(405, 110);
+            this.btnHP.Location = new System.Drawing.Point(405, 104);
             this.btnHP.Margin = new System.Windows.Forms.Padding(2);
             this.btnHP.Name = "btnHP";
             this.btnHP.Size = new System.Drawing.Size(130, 26);
@@ -299,7 +299,7 @@
             // 
             // btnMP
             // 
-            this.btnMP.Location = new System.Drawing.Point(405, 139);
+            this.btnMP.Location = new System.Drawing.Point(405, 133);
             this.btnMP.Margin = new System.Windows.Forms.Padding(2);
             this.btnMP.Name = "btnMP";
             this.btnMP.Size = new System.Drawing.Size(130, 26);
@@ -310,7 +310,7 @@
             // 
             // btnHPMP
             // 
-            this.btnHPMP.Location = new System.Drawing.Point(405, 168);
+            this.btnHPMP.Location = new System.Drawing.Point(405, 162);
             this.btnHPMP.Margin = new System.Windows.Forms.Padding(2);
             this.btnHPMP.Name = "btnHPMP";
             this.btnHPMP.Size = new System.Drawing.Size(130, 26);
@@ -321,7 +321,7 @@
             // 
             // btnZeroMP
             // 
-            this.btnZeroMP.Location = new System.Drawing.Point(405, 198);
+            this.btnZeroMP.Location = new System.Drawing.Point(405, 192);
             this.btnZeroMP.Margin = new System.Windows.Forms.Padding(2);
             this.btnZeroMP.Name = "btnZeroMP";
             this.btnZeroMP.Size = new System.Drawing.Size(130, 26);
@@ -332,7 +332,7 @@
             // 
             // btnLucky
             // 
-            this.btnLucky.Location = new System.Drawing.Point(405, 227);
+            this.btnLucky.Location = new System.Drawing.Point(405, 221);
             this.btnLucky.Margin = new System.Windows.Forms.Padding(2);
             this.btnLucky.Name = "btnLucky";
             this.btnLucky.Size = new System.Drawing.Size(130, 26);
@@ -343,7 +343,7 @@
             // 
             // btnCure
             // 
-            this.btnCure.Location = new System.Drawing.Point(405, 256);
+            this.btnCure.Location = new System.Drawing.Point(405, 250);
             this.btnCure.Margin = new System.Windows.Forms.Padding(2);
             this.btnCure.Name = "btnCure";
             this.btnCure.Size = new System.Drawing.Size(130, 26);
@@ -354,7 +354,7 @@
             // 
             // btnSupport
             // 
-            this.btnSupport.Location = new System.Drawing.Point(6, 168);
+            this.btnSupport.Location = new System.Drawing.Point(6, 162);
             this.btnSupport.Margin = new System.Windows.Forms.Padding(2);
             this.btnSupport.Name = "btnSupport";
             this.btnSupport.Size = new System.Drawing.Size(130, 26);
@@ -598,7 +598,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(542, 287);
+            this.ClientSize = new System.Drawing.Size(542, 281);
             this.Controls.Add(this.lblAuthor);
             this.Controls.Add(this.pictureBox19);
             this.Controls.Add(this.pictureBox20);
